@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    background-color: #2F2F33;
+    color: white;
+}
+
+
+nav{
+    background-color: #202027;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px 0 25px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0.4;
+}
+nav ul li{
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+main p {
+    font-weight: bold;
+    font-size: 50px;
+    align-items: center;
+    align-self: center;
+}
+main p span{
+    color: #BD3A3A;
+    padding-left: 5px;
+}
+main form {
+    background-color: #202027;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+}
+form label {
+    font-size: 25px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+}
+form input {
+    height: 30px;
+    border-radius: 10px;
+    border: none
+}
+form button {
+    height: 35px;
+    background-color: #5083D0;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+
+}
+
+footer{
+    flex: 1;
+    background-color: #202027;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    padding-right: 20px;
+    position: fixed;
+    margin-top: 10vh;
+}
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer ul li {
+    list-style: none;
+    font-size: 15px ;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-device-width: 847px) {
+    main{
+        flex-direction: column;
+        padding: 0px;
+        justify-content: space-around;
+        height: 100vh;
+    }
+    main form {
+        align-self: center;
+    }
+}
+
+/* @media only screen and (max-device-width: 720px) and (orientation: portrait){
+    nav ul  {
+        visibility: visible;
+    }
+} */
+
+@media only screen and (max-width: 720px){
+    nav ul  {
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width: 600px){
+    main form {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 300px){
+    main form {
+        width: 200px;
+    }
+}
+
+
